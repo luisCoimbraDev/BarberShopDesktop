@@ -2,6 +2,10 @@
 import { useEffect } from "react";
 import { Command } from '@tauri-apps/plugin-shell';
 
+/**
+ * A React hook to manage a sidecar process.
+ * It starts the sidecar process when the component mounts and kills it when the component unmounts.
+ */
 function useSidecarApi() {
   useEffect(() => {
     // chama o executável empacotado com uma porta
@@ -22,6 +26,11 @@ function useSidecarApi() {
 }
 
 
+/**
+ * A component that boots the sidecar server.
+ * It uses the useSidecarApi hook to manage the sidecar process.
+ * @returns {null} This component does not render anything.
+ */
 export function bootServer(){
     useSidecarApi();
     return null;

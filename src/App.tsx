@@ -7,6 +7,10 @@ import { bootServer } from "./services/boot";
 
 
 
+/**
+ * A button that closes the current Tauri window.
+ * @returns {JSX.Element} The rendered button component.
+ */
 export function CloseButton() {
   return (
     <button
@@ -19,7 +23,11 @@ export function CloseButton() {
   );
 }
 
-
+/**
+ * The main application component.
+ * It boots the server and renders the LoginForm.
+ * @returns {JSX.Element} The rendered application component.
+ */
 function App() {
   bootServer();
   return (
