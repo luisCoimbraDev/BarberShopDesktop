@@ -22,6 +22,13 @@ import { CloseButton } from "@/App"
 
 
 
+/**
+ * A login form component.
+ * It renders a card with a form to allow users to login.
+ * @param {React.ComponentProps<"div">} props - The component props.
+ * @param {string} props.className - The class name for the component.
+ * @returns {JSX.Element} The rendered component.
+ */
 export function LoginForm({
   className,
   ...props
